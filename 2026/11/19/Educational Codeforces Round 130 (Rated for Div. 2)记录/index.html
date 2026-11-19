@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Educational Codeforces Round 130 (Rated for Div. 2) A洛谷 12345678910111213141516171819202122232425#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int T;int n,m;int a[105];int main()&#123;	ios::sync_wi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2026/11/19/Educational%20Codeforces%20Round%20130%20(Rated%20for%20Div.%202)%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Educational Codeforces Round 130 (Rated for Div. 2) A洛谷 12345678910111213141516171819202122232425#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int T;int n,m;int a[105];int main()&#123;	ios::sync_wi">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/42ce5gj9.png">
+<meta property="article:published_time" content="2026-11-19T04:52:06.571Z">
+<meta property="article:modified_time" content="2026-06-08T04:31:47.177Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/42ce5gj9.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Educational Codeforces Round 130 (Rated for Div. 2)记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/11/19/Educational%20Codeforces%20Round%20130%20(Rated%20for%20Div.%202)%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time class="dt-published" datetime="2026-11-19T04:52:06.571Z" itemprop="datePublished">2026-11-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1697">Educational Codeforces Round 130 (Rated for Div. 2)</a><br><img src="https://cdn.luogu.com.cn/upload/image_hosting/42ce5gj9.png"></p>
+<h2 id="A"><a href="#A" class="headerlink" title="A"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1697/problem/A">A</a></h2><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF1697A">洛谷</a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> T;</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="type">int</span> a[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">	cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    cin&gt;&gt;T;</span><br><span class="line">    <span class="keyword">while</span>(T--)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">            cin&gt;&gt;a[i];</span><br><span class="line">        <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(m&gt;=a[i]) m-=a[i];</span><br><span class="line">            <span class="keyword">else</span> ans+=a[i]-m,m=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>显然，无论在哪一个长凳恢复能量，效果都是一样的，所以可以在能量不足到下一个长凳时恢复到恰好能到下一个长凳的能量。</p>
+<h2 id="B"><a href="#B" class="headerlink" title="B"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1697/problem/B">B</a></h2><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF1697B">洛谷</a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="type">int</span> a[<span class="number">200005</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> sum[<span class="number">200005</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">	cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">        cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">    <span class="built_in">sort</span>(a<span class="number">+1</span>,a<span class="number">+1</span>+n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        sum[i]=sum[i<span class="number">-1</span>]+a[i];</span><br><span class="line">    <span class="keyword">while</span>(m--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> x,y;</span><br><span class="line">        cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line">        cout&lt;&lt;sum[n-x+y]-sum[n-x]&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因为要使免费的总价格尽可能高，所以选的一定是价格最高的x个物品，若选更多的物品，会使其中价格最低的y个总价更低，所以只要先排序，再用前缀和求$\sum a[i] ,i\in [n-x+y,n-x]$即可。</p>
+<h2 id="C"><a href="#C" class="headerlink" title="C"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1697/problem/C">C</a></h2><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF1697C">洛谷</a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> T;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line">string a,b;</span><br><span class="line">string ac1,ac2;</span><br><span class="line"><span class="type">int</span> suma[<span class="number">100005</span>],sumc[<span class="number">100005</span>];</span><br><span class="line">queue&lt;<span class="type">int</span>&gt; q;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">	cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    cin&gt;&gt;T;</span><br><span class="line">    <span class="keyword">while</span>(T--)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;n&gt;&gt;a&gt;&gt;b;</span><br><span class="line">        ac1=<span class="string">&quot;&quot;</span>,ac2=<span class="string">&quot;&quot;</span>;</span><br><span class="line">        a=<span class="string">&quot; &quot;</span>+a,b=<span class="string">&quot; &quot;</span>+b;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(a[i]!=<span class="string">&#x27;b&#x27;</span>) ac1+=a[i];</span><br><span class="line">            <span class="keyword">if</span>(b[i]!=<span class="string">&#x27;b&#x27;</span>) ac2+=b[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(ac1!=ac2)</span><br><span class="line">        &#123;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;NO\n&quot;</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(!q.<span class="built_in">empty</span>()) q.<span class="built_in">pop</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(b[i]==<span class="string">&#x27;b&#x27;</span>) q.<span class="built_in">push</span>(i);</span><br><span class="line">            suma[i]=suma[i<span class="number">-1</span>],sumc[i]=sumc[i<span class="number">-1</span>];</span><br><span class="line">            <span class="keyword">if</span>(a[i]==<span class="string">&#x27;a&#x27;</span>) suma[i]++;</span><br><span class="line">            <span class="keyword">if</span>(a[i]==<span class="string">&#x27;c&#x27;</span>) sumc[i]++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">bool</span> flag=<span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>,pre=<span class="number">0x3f3f3f3f</span>;i&lt;=n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(a[i]==<span class="string">&#x27;b&#x27;</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="type">int</span> j=q.<span class="built_in">front</span>(); q.<span class="built_in">pop</span>();</span><br><span class="line">                <span class="keyword">if</span>(j&lt;i&amp;&amp;sumc[i]-sumc[j<span class="number">-1</span>]!=<span class="number">0</span>||j&gt;i&amp;&amp;suma[j]-suma[i]!=<span class="number">0</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    cout&lt;&lt;<span class="string">&quot;NO\n&quot;</span>;</span><br><span class="line">                    flag=<span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag)</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;YES\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>首先，只有s中字符b会移动，且不影响ac顺序，所以s，t中将b删去后的子序列若不相同则一定为NO。若相同，因为b往前交换前面必须是a，往后则必须是c，又因为s，t中b按序匹配一定是不劣于有交叉情况的（具体的懒得写了），所以只需统计a，c数量的前缀和，计算每个对应的b间是否只有a（s中b在t前）或c（s中b在t后）。</p>
+<h2 id="D"><a href="#D" class="headerlink" title="D"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1697/problem/D">D</a></h2><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF1697D">洛谷</a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> c;</span><br><span class="line">    <span class="type">int</span> pos;</span><br><span class="line">&#125;a[<span class="number">35</span>];</span><br><span class="line">string s;</span><br><span class="line"><span class="type">char</span> t;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">check</span><span class="params">(<span class="type">int</span> id,<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;? 2 &quot;</span>&lt;&lt;a[id].pos&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;x&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="type">int</span> tmp;</span><br><span class="line">    cin&gt;&gt;tmp;</span><br><span class="line">    <span class="keyword">if</span>(tmp==m-id<span class="number">+1</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">cmp</span><span class="params">(node p,node q)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> p.pos&lt;q.pos;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// ios::sync_with_stdio(0);</span></span><br><span class="line">	<span class="comment">// cin.tie(0);</span></span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;? 1 1\n&quot;</span>;</span><br><span class="line">    m++;</span><br><span class="line">    cin&gt;&gt;a[m].c;</span><br><span class="line">    a[m].pos=<span class="number">1</span>;</span><br><span class="line">    s+=a[m].c;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(m&lt;<span class="number">26</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;? 2 1 &quot;</span>&lt;&lt;i&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">            <span class="type">int</span> tmp;</span><br><span class="line">            cin&gt;&gt;tmp;</span><br><span class="line">            <span class="keyword">if</span>(tmp==m) <span class="keyword">goto</span> FIND;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;? 1 &quot;</span>&lt;&lt;i&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">            m++;</span><br><span class="line">            cin&gt;&gt;a[m].c;</span><br><span class="line">            a[m].pos=i;</span><br><span class="line">            s+=a[m].c;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        FIND:</span><br><span class="line">        <span class="type">int</span> l=<span class="number">1</span>,r=m;</span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> mid=l+r<span class="number">+1</span>&gt;&gt;<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(<span class="built_in">check</span>(mid,i))</span><br><span class="line">                l=mid;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                r=mid<span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        s+=a[l].c;</span><br><span class="line">        a[l].pos=i;</span><br><span class="line">        <span class="built_in">sort</span>(a<span class="number">+1</span>,a<span class="number">+1</span>+m,cmp);</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;! &quot;</span>&lt;&lt;s;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因为第一个问题只能用26次，所以肯定是每个1问题都得找到一个新的字母。所以如果这个字母是一个新的，就直接问它是什么。即先问<code>? 2 1 i</code>如果与现有字母数量不一样则再问<code>? 1 i</code>；如果一样，则可以一个一个往前推，但这样显然超出了问题二6000个，但可以把每个字母出现的最后一个位置记录下来，按从后向前顺序问，还可以加一个二分查找，看与它相同的字母是否在最近mid个出现的字母中，这样第二个问题的数量就小于$(log_2 26+1)\times n&lt;(5+1)*1000&#x3D;6000$，符合限制。</p>
+<h2 id="E"><a href="#E" class="headerlink" title="E"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1697/problem/E">E</a></h2><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF1697E">洛谷</a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> dis(i,j) (abs(x[i]-x[j])+abs(y[i]-y[j]))</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> F return flag[i]=false</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> T return flag[i]=true</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod=<span class="number">998244353</span>;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> x[<span class="number">105</span>],y[<span class="number">105</span>];</span><br><span class="line"><span class="type">int</span> minn[<span class="number">105</span>];</span><br><span class="line">vector&lt;<span class="type">int</span>&gt; g[<span class="number">105</span>];</span><br><span class="line"><span class="type">bool</span> flag[<span class="number">105</span>];</span><br><span class="line"><span class="type">bool</span> vis[<span class="number">105</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> c[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> fac[<span class="number">105</span>];</span><br><span class="line"><span class="type">int</span> cnt;</span><br><span class="line">vector&lt;<span class="type">int</span>&gt; col[<span class="number">105</span>];</span><br><span class="line"><span class="type">int</span> b[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">solve</span><span class="params">(<span class="type">int</span> i)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(vis[i]) <span class="keyword">return</span> flag[i];</span><br><span class="line">	<span class="keyword">if</span>(g[i].<span class="built_in">size</span>()&gt;<span class="number">3</span>||g[i].<span class="built_in">size</span>()==<span class="number">0</span>) F;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> m=<span class="number">0</span>;m&lt;g[i].<span class="built_in">size</span>();m++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> j=g[i][m];</span><br><span class="line">		<span class="keyword">if</span>(g[j].<span class="built_in">size</span>()!=g[i].<span class="built_in">size</span>()) F;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">0</span>;k&lt;g[j].<span class="built_in">size</span>();k++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="type">int</span> u=g[j][k];</span><br><span class="line"><span class="comment">//			cout&lt;&lt;j&lt;&lt;&quot; &quot;&lt;&lt;k&lt;&lt;&quot; &quot;&lt;&lt;u&lt;&lt;&quot;\n&quot;;</span></span><br><span class="line">			<span class="keyword">if</span>(u==i) <span class="keyword">continue</span>;</span><br><span class="line">			<span class="type">bool</span> is_inI=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> t=<span class="number">0</span>;t&lt;g[i].<span class="built_in">size</span>();t++)</span><br><span class="line">				<span class="keyword">if</span>(u==g[i][t]) is_inI=<span class="number">1</span>;</span><br><span class="line"><span class="comment">//			cout&lt;&lt;i&lt;&lt;&quot; &quot;&lt;&lt;is_inI&lt;&lt;&quot;\n&quot;;</span></span><br><span class="line">			<span class="keyword">if</span>(!is_inI) F;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cnt++;</span><br><span class="line">	col[cnt].<span class="built_in">push_back</span>(i),vis[i]=<span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> m=<span class="number">0</span>;m&lt;g[i].<span class="built_in">size</span>();m++)</span><br><span class="line">		col[cnt].<span class="built_in">push_back</span>(g[i][m]),vis[g[i][m]]=<span class="literal">true</span>,flag[g[i][m]]=<span class="literal">true</span>;</span><br><span class="line">	T;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	fac[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		c[<span class="number">0</span>][i]=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)</span><br><span class="line">			c[j][i]=(c[j<span class="number">-1</span>][i<span class="number">-1</span>]+c[j][i<span class="number">-1</span>])%mod;</span><br><span class="line">		<span class="keyword">if</span>(i&gt;<span class="number">0</span>) fac[i]=fac[i<span class="number">-1</span>]*i%mod;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">		cin&gt;&gt;x[i]&gt;&gt;y[i],minn[i]=<span class="number">0x3f3f3f3f</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(i==j) <span class="keyword">continue</span>;</span><br><span class="line">			minn[i]=<span class="built_in">min</span>(minn[i],<span class="built_in">dis</span>(i,j));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)</span><br><span class="line">			<span class="keyword">if</span>(<span class="built_in">dis</span>(i,j)==minn[i]) g[i].<span class="built_in">push_back</span>(j);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">		<span class="keyword">if</span>(!<span class="built_in">solve</span>(i)) col[++cnt].<span class="built_in">push_back</span>(i);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=cnt;i++)</span><br><span class="line">		b[col[i].<span class="built_in">size</span>()]++;</span><br><span class="line">	<span class="type">long</span> <span class="type">long</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i2=<span class="number">0</span>;i2&lt;=b[<span class="number">2</span>];i2++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i3=<span class="number">0</span>;i3&lt;=b[<span class="number">3</span>];i3++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> i4=<span class="number">0</span>;i4&lt;=b[<span class="number">4</span>];i4++)</span><br><span class="line">			&#123;</span><br><span class="line">				ans=(ans+c[i2][b[<span class="number">2</span>]]%mod*c[i3][b[<span class="number">3</span>]]%mod*c[i4][b[<span class="number">4</span>]]%mod*c[n-i2<span class="number">-2</span>*i3<span class="number">-3</span>*i4][n]%mod*fac[n-i2<span class="number">-2</span>*i3<span class="number">-3</span>*i4]%mod)%mod;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;ans;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em>比赛时时间不足虽然注意到了几个性质但没写完</em></p>
+<p>性质：</p>
+<ol>
+<li>任何一个点都属于一个点集，使得对于每一种方案，这个点集内的点要么都同色，要么都不同色，且不与其他点集同色（由两条约束比较显然就能得到，2保证它与它同色的点如果有一定包含是那个点集，1保证它一定被那个点集包含）</li>
+<li>任何一个点属于的点集为据它最近的点的集合，且集合中每个点都满足这个条件，否则它单独为一个点集。（由两条约束比较显然就能得到）</li>
+<li>任何一个点集大小不超过四（若有两个点在一个点集中，以这连个点为圆心画出一个曼哈顿距离圆（一个斜着的正方形），最多有两个交点）</li>
+</ol>
+<p>所以只要对一个未被加入进点集中的点，判断它与据它最近的点的集合是否符合题意。最后算出大小为1234的点集各有多少个，对与所有大小为$i$的点集（$b[i]$个）考虑有$j_i$个算作一个整体，则一共有$C^{j_i} _{b[i]} $种选法。最后一共有$n-j_2-2j_3-3j_4$种颜色，即有$A^{n-j_2-2j_3-3j_4}_n&#x3D;C^{n-j_2-2j_3-3j_4}_n \times (n-j_2-2j_3-3j_4)!$种选法，最终有$\sum (\prod C^{j_i} _{b[i]} \times C^{n-j_2-2j_3-3j_4}_n \times (n-j_2-2j_3-3j_4)!)$方案。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/11/19/Educational%20Codeforces%20Round%20130%20(Rated%20for%20Div.%202)%E8%AE%B0%E5%BD%95/" data-id="cuid4itg0RkMTCKEFqpQcc5En" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2026/11/19/Educational%20Codeforces%20Round%2080%20(Rated%20for%20Div.%202)%E8%AE%B0%E5%BD%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2026/11/18/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/11/">November 2026</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/11/19/%E3%80%90LGR-298-Div.2%E3%80%91%E6%B4%9B%E8%B0%B7%208%20%E6%9C%88%E6%9C%88%E8%B5%9B%20III%20&%20IXOI%20Round%202/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2026/11/19/Educational%20Codeforces%20Round%2067%20(Rated%20for%20Div.%202)%E8%AE%B0%E5%BD%95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2026/11/19/Educational%20Codeforces%20Round%2080%20(Rated%20for%20Div.%202)%E8%AE%B0%E5%BD%95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2026/11/19/Educational%20Codeforces%20Round%20130%20(Rated%20for%20Div.%202)%E8%AE%B0%E5%BD%95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2026/11/18/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
