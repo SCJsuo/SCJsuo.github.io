@@ -1380,7 +1380,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ffff59;
+  background: #1cf;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2578,12 +2578,6 @@ mark.search-keyword {
   border-bottom: 1px dashed #ff2a2a;
   color: #ff2a2a;
   font-weight: bold;
-}
-.has-jax {
-  overflow: auto hidden;
-}
-mjx-container[display='true'] + br {
-  display: none;
 }
 .use-motion .animated {
   animation-fill-mode: none;
